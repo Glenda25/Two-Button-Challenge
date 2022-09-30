@@ -10,9 +10,13 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var messageLabel: UILabel!
+    
+    @IBOutlet weak var imageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("View did load")
+        
     }
     @IBAction func showMessage(_ sender: UIButton) {
         print("Show Message button pressed")
@@ -20,6 +24,7 @@ class ViewController: UIViewController {
         messageLabel.textColor = UIColor.red
         messageLabel.textAlignment = NSTextAlignment.left
         messageLabel.backgroundColor = .clear
+        imageView.image = UIImage(named: "image1")
     }
     @IBAction func showAlternativeMessage(_ sender: UIButton) {
         print("Show Alternative Message button pressed")
@@ -28,6 +33,7 @@ class ViewController: UIViewController {
         messageLabel.textColor = .blue
         messageLabel.textAlignment = .right
         messageLabel.backgroundColor = .lightGray  // need to state background colour in both buttons otherwise the the last setting is used
+        imageView.image = UIImage(named: "image2")
     }
     
 

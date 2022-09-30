@@ -29,7 +29,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Show Message"/>
                                 <connections>
-                                    <action selector="showMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FhD-F5-vNY"/>
+                                    <action selector="showMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rso-eO-1T9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSP-io-lI9">
@@ -41,11 +41,16 @@
                                     <action selector="showAlternativeMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZTY-R1-Vdb"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rh6-QT-n1e">
+                                <rect key="frame" x="18" y="211" width="359" height="607"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="imageView" destination="rh6-QT-n1e" id="V28-XU-mzE"/>
                         <outlet property="messageLabel" destination="Wgu-QG-dlJ" id="eda-ef-ROH"/>
                     </connections>
                 </viewController>
