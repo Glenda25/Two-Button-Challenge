@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,55 +13,52 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Two_Button_Challenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Place Holder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wgu-QG-dlJ">
-                                <rect key="frame" x="18" y="67" width="354" height="100"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Place Holder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wgu-QG-dlJ">
+                                <rect key="frame" x="18" y="67" width="339" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="eAX-NU-XsA"/>
+                                    <constraint firstAttribute="height" constant="100" id="lZ8-18-1qS"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" systemColor="systemPinkColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSA-8J-wgC">
-                                <rect key="frame" x="18" y="168" width="139" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="BUV-k5-S2A"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSA-8J-wgC">
+                                <rect key="frame" x="1" y="172" width="139" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Show Message"/>
                                 <connections>
                                     <action selector="showMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rso-eO-1T9"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSP-io-lI9">
-                                <rect key="frame" x="150" y="168" width="225" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="aUQ-tl-VPS"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSP-io-lI9">
+                                <rect key="frame" x="151" y="172" width="225" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Show Alternative Message"/>
                                 <connections>
                                     <action selector="showAlternativeMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZTY-R1-Vdb"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rh6-QT-n1e">
-                                <rect key="frame" x="18" y="196" width="357" height="615"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rh6-QT-n1e">
+                                <rect key="frame" x="1" y="202" width="375" height="609"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="kSP-io-lI9" firstAttribute="top" secondItem="Wgu-QG-dlJ" secondAttribute="bottom" constant="1" id="4R1-7C-pGi"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rh6-QT-n1e" secondAttribute="bottom" constant="7" id="D9d-LC-5TG"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kSP-io-lI9" secondAttribute="trailing" constant="18" id="O77-62-L8N"/>
-                            <constraint firstItem="rh6-QT-n1e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="18" id="Ssd-Sx-tq2"/>
-                            <constraint firstItem="OSA-8J-wgC" firstAttribute="top" secondItem="Wgu-QG-dlJ" secondAttribute="bottom" constant="1" id="WI6-Cw-p4e"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rh6-QT-n1e" secondAttribute="trailing" constant="18" id="Yof-we-HQk"/>
-                            <constraint firstItem="rh6-QT-n1e" firstAttribute="top" secondItem="Wgu-QG-dlJ" secondAttribute="bottom" constant="29" id="cg8-gZ-CJt"/>
-                            <constraint firstItem="OSA-8J-wgC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="18" id="w9m-cD-7do"/>
+                            <constraint firstItem="rh6-QT-n1e" firstAttribute="top" secondItem="Wgu-QG-dlJ" secondAttribute="bottom" constant="35" id="7fZ-fR-CMP"/>
+                            <constraint firstItem="kSP-io-lI9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="1" id="AGL-jC-IzG"/>
+                            <constraint firstItem="Wgu-QG-dlJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Bfh-iR-OjI"/>
+                            <constraint firstItem="OSA-8J-wgC" firstAttribute="top" secondItem="Wgu-QG-dlJ" secondAttribute="bottom" constant="5" id="OJr-o1-cUe"/>
+                            <constraint firstItem="Wgu-QG-dlJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="18" id="aWV-wt-1vK"/>
+                            <constraint firstItem="rh6-QT-n1e" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="1" id="f63-l1-sTd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wgu-QG-dlJ" secondAttribute="trailing" constant="18" id="fjJ-o8-Q4m"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="rh6-QT-n1e" secondAttribute="bottom" constant="-33" id="iEM-ke-T0a"/>
+                            <constraint firstItem="kSP-io-lI9" firstAttribute="top" secondItem="Wgu-QG-dlJ" secondAttribute="bottom" constant="5" id="vYI-oS-fYz"/>
+                            <constraint firstItem="OSA-8J-wgC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="1" id="yXs-wf-2Qc"/>
+                            <constraint firstItem="rh6-QT-n1e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="1" id="ytn-u1-YZc"/>
                         </constraints>
                     </view>
                     <connections>
