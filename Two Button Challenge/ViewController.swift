@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
     
+    var imageNumber = 1
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("View did load")
@@ -25,7 +27,14 @@ class ViewController: UIViewController {
         messageLabel.textColor = UIColor.red
         messageLabel.textAlignment = NSTextAlignment.center
         messageLabel.backgroundColor = .clear
-        imageView.image = UIImage(named: "image1")
+        if imageNumber < 10 {
+            imageNumber = imageNumber + 1
+        }else {
+            imageNumber = 1
+        }
+        print(imageNumber)
+        //adding an int onto a string - 2 methods either this, or the other in AltMessage
+        imageView.image = UIImage(named: "image" + String(imageNumber))
     }
     @IBAction func showAlternativeMessage(_ sender: UIButton) {
         print("Show Alternative Message button pressed")
@@ -34,7 +43,13 @@ class ViewController: UIViewController {
         messageLabel.textColor = .blue
         messageLabel.textAlignment = .center
         messageLabel.backgroundColor = .clear  // need to state background colour in both buttons otherwise the the last setting is used
-        imageView.image = UIImage(named: "image2")
+        if imageNumber < 10 {
+            imageNumber = imageNumber + 3
+        }else {
+            imageNumber = 1
+        }
+        print(imageNumber)
+        imageView.image = UIImage(named: "image\(imageNumber)")
     }
     
 
